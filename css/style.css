@@ -10,6 +10,10 @@ body{
 	padding: 0;
 	width: 100%;
 }
+.contenedor{
+	margin: auto;
+	width: 100%;
+}
 h1, h2 {font-family: 'Questrial', sans-serif;font-weight: normal;}
 *{box-sizing: border-box;}
 a{text-decoration: none;}
@@ -32,13 +36,17 @@ section, footer{
 	width: 100%;
 
 }
+.contenedor_Nube{
+	position: relative;
+}
 .nube-menu{
-	position: absolute;
-	height: 20vh;
-	width: 100%;
+	position:absolute;
 	background:url(../img/nube-10.svg)no-repeat;
 	background-position: top center;
-	background-size: cover;
+	background-size: 105%;
+	height: 20vw;
+	width: 100%;
+	margin: 0;
 }
 
 .menug a {
@@ -96,9 +104,11 @@ section, footer{
 	background-repeat: no-repeat,no-repeat;
 	background-attachment: local, fixed;
 	background-position: bottom, center;
-	background-size: contain,cover;
+	background-size: 102%,cover;
 	height: 100vh;
+	margin: 0;
 }
+
 .identidad{
 	display: flex;
 	flex-wrap: wrap;
@@ -112,6 +122,7 @@ section, footer{
 	max-width: 100%;
 }
 .identidad h1{
+	font-size: 2rem;
 	color: white;
 	text-shadow: 1px 1px 1px black; 
 	text-align: center;
@@ -316,7 +327,7 @@ footer{
 .redes{
 	display: grid;
 	grid-template-columns:60% 10% 10% 10% 10%;
-	grid-gap: 1px;
+	grid-gap: 1rem;
 	align-items: center;
 	justify-content: center;
 	padding: 1vw 5vw;
@@ -328,10 +339,23 @@ footer{
 	
 }
 .fab {
-	font-size: 5vw;
+	font-size: 3vw;
 	color: #EEDAEF;
 }
 
+@media (min-width:1200px){
+	.contenedor{
+	width: 80%;
+	}
+	.menug a {
+  	font-size: 16px;
+	padding: 1vw;
+	}
+	.identidad h1{
+	font-size: 3rem;
+	padding-top: 1.5rem;
+}
+}
 @media (min-width:993px) and (max-width: 1199px){
 	/*PARA TABLET MENU*/
 	.menug a {
