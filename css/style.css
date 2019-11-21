@@ -21,8 +21,6 @@ section, footer{
 	margin: 0;
 	padding: 0;
 }
-
-                           /*MENU*/
 .logotipo {
 	width: 5rem;	
 }
@@ -382,10 +380,47 @@ footer{
 }
 .contenedorFooter p{
 	color: #FFFFFF;
-	font-size: 10px;
-	
+	font-size: 10px;	
 }
 
+.tituloPortafolio h1{
+
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: white;
+	font-size: 2.5em;
+	text-align: center;
+	padding:0 0 4vw;
+	margin:0;
+}
+.bottonP{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-items:center;
+	align-items: center;
+	
+	
+}
+.bottonP h1{
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: white;
+	text-align: center;
+	width: 22vw;
+	border-radius: 5vw;
+	padding: 0.3em;
+	margin: 0 0 5vw;
+	background: #CC3333;
+}
+
+.bottonP h1:hover{
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: white;
+	width: 21vw;
+	border-radius: 5vw;
+	padding: 0.3em;
+	margin: 0 0 5vw;
+	background: #FF3333;
+}
 .fab {
 	font-size: 10vw;
 	align-items: center;
